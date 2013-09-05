@@ -1,5 +1,4 @@
 geddy-nodejs
 ============
 
-Node js Todo app with geddy framework.
-Database : Mongodb
+Node js Todo app with geddy framework and Mongodb database.
