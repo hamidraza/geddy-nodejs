@@ -1,0 +1,17 @@
+[Thu, 05 Sep 2013 00:03:48 GMT] ERROR 127.0.0.1 - - [Thu Sep 05 2013 05:33:48 GMT+0530 (India Standard Time)] "GET /todos/26A0170C-CA0E-4AFB-BED5-2333962DA987/edit 1.1" 500 1435 "http://localhost:4000/todos" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+ReferenceError: ejs:1
+ >> 1| <%
+    2|   var isUpdate = params.action == 'edit';
+    3|   var formTitle = isUpdate ? 'Update this To Do Item' : 'Create a new To Do Item';
+    4|   var action = isUpdate ? '/todos/' + todo.id + '?_method=PUT' : '/todos';
+todo is not defined
+    at handleErr (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\engines\ejs.js:58:15)
+    at Object.rethrow (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\engines\ejs.js:90:41)
+    at eval (eval at <anonymous> (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\engines\ejs.js:88:10), <anonymous>:11:1915)
+    at C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\engines\ejs.js:101:17
+    at ejs.render (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\adapters\ejs.js:28:10)
+    at Adapter.render (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\adapters\index.js:125:22)
+    at Partial.renderSelf (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:126:28)
+    at handleData (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:99:16)
+    at C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:117:9
+    at fs.js:266:14

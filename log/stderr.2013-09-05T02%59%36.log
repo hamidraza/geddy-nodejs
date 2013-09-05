@@ -1,0 +1,12 @@
+[Wed, 04 Sep 2013 21:27:57 GMT] ERROR 127.0.0.1 - - [Thu Sep 05 2013 02:57:57 GMT+0530 (India Standard Time)] "GET /todos 1.1" 500 1205 "http://localhost:4000/todos/add" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+ReferenceError: todos is not defined
+    at index (D:\hamid\geddy\todo\app\controllers\todos.js:6:21)
+    at callback (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\controller\base_controller.js:364:22)
+    at controller.BaseController._handleAction (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\controller\base_controller.js:377:7)
+    at cb [as callback] (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\app\index.js:252:36)
+    at async.Initializer.complete (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\node_modules\utilities\lib\async.js:286:10)
+    at C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\app\index.js:263:21
+    at C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\controller\init.js:103:9
+    at localCallback (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\sessions\index.js:86:9)
+    at Memory.read (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\sessions\stores\memory.js:35:5)
+    at init (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\sessions\index.js:89:19)

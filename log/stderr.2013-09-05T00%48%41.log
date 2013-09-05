@@ -1,0 +1,11 @@
+[Wed, 04 Sep 2013 19:18:34 GMT] ERROR 127.0.0.1 - - [Thu Sep 05 2013 00:48:34 GMT+0530 (India Standard Time)] "GET /todos/abc 1.1" 500 935 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+Error: Partial template "app\views\todos\show" not found in app\views, app\views\todos and app/views/layouts
+    at Partial.getTemplateData (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:85:15)
+    at Partial.render (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:95:29)
+    at C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:136:15
+    at Array.forEach (native)
+    at Partial.renderChildren (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:135:16)
+    at handleData (C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:100:16)
+    at C:\Users\kanizFatma\AppData\Roaming\npm\node_modules\geddy\lib\template\partial.js:117:9
+    at fs.js:266:14
+    at Object.oncomplete (fs.js:107:15)

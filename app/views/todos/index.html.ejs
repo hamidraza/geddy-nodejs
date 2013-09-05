@@ -1,0 +1,13 @@
+<div class="hero-unit">
+    <h2>To Do List <a href="/todos/add" class="btn pull-right">Create a new To Do</a></h2>
+    <% if (todos && todos.length) { %>
+        <% for (var i in todos) { %>
+        <hr>
+        <div class="clearfix">
+            <div class="pull-left"><a href="/todos/<%= todos[i].id; %>/edit"><%= todos[i].title; %></a></div>
+            <div class="pull-right"><i class="icon-list-alt"></i><%= todos[i].status; %></div>
+        </div>
+        <% } %>
+    <% } %>
+    <hr>
+</div>
